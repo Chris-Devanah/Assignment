@@ -1,50 +1,81 @@
 /* Overall container */
 .container {
   display: flex;
-  justify-content: space-between; /* Adjust for spacing between columns */
-  align-items: center; /* Adjust for vertical alignment */
-  width: 100%; /* Or set a specific width */
-  margin: 0 auto; /* Add horizontal margins for centering */
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
 }
 
 /* Left column */
 .left-column {
-  width: 40%; /* Adjust as needed */
-  padding: 20px; /* Add padding */
+  width: 40%;
+  padding: 20px;
+}
+
+/* Logo */
+.left-column img {
+  width: 77.333px;
+  height: 80px;
+  flex-shrink: 0;;
+}
+
+/* For Individuals heading */
+.left-column h2 {
+  color: var(--CL-Black, #000B0A);
+  font-family: Brown;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px; /* 125% */
+  letter-spacing: -0.8px;
+}
+
+/* Left column paragraph */
+.left-column p {
+  color: var(--CL-Grey, #737373);
+  font-family: Brown;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 156.25% */
 }
 
 /* Right column */
 .right-column {
-  width: 60%; /* Adjust as needed */
-  padding: 20px; /* Add padding */
+  width: 60%;
+  padding: 20px;
 }
 
 /* Form container */
 .form-container {
-  background-color: #f5f5f5; /* Adjust background color */
-  border-radius: 10px; /* Adjust border radius */
-  padding: 30px; /* Adjust padding */
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  width: 580px;
+  height: 679px;
+  flex-shrink: 0;
+  background-color: #FFF;
+  border-radius: 6px;
+  box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+  padding: 30px; /* Keep this padding for spacing within the container */
 }
 
 /* User details section */
 .user-details {
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping to next line */
-  gap: 20px; /* Adjust gap between input fields */
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 /* Input and select boxes (general) */
 .input-box,
 .select-box {
-  width: 238px; /* Default width for most boxes */
+  width: 238px;
   height: 48px;
-  flex-shrink: 0; /* Prevent shrinking below specified width */
+  flex-shrink: 0;
 }
 
 /* Extend activity level and password input boxes */
 .user-details > :nth-last-child(-n + 2) .input-box {
-  width: 500px; /* Full width for these boxes */
+  width: 500px;
 }
 
 /* Arrange label and input vertically within each box */
@@ -52,7 +83,7 @@
 .select-box {
   display: flex;
   flex-direction: column;
-  gap: 10px; /* Spacing between label and input */
+  gap: 10px;
 }
 
 /* Spacing below input boxes */
@@ -70,28 +101,26 @@
 /* Label styling */
 .input-box span,
 .select-box span {
-  display: block; /* Display labels as block elements */
-  margin-bottom: 5px; /* Adjust spacing below labels */
+  display: block;
+  margin-bottom: 5px;
 }
 
 /* Button */
 button {
   width: 500px;
   height: 48px;
-  flex-shrink: 0; /* Prevent shrinking below specified width */
-  background-color: var(--CL-Green, #2EC4B6); /* Use custom color or fallback */
+  flex-shrink: 0;
+  background-color: var(--CL-Green, #2EC4B6);
   color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 20px; /* Adjust button spacing */
-  filter: drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.10)); /* Add shadow effect */
+  margin-top: 20px;
+  filter: drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.10));
 }
 
 /* Terms and conditions */
 .terms-and-conditions {
-  margin-top: 20px; /* Adjust spacing */
-  font-size: 12px; /* Adjust font size */
-  text-align: center;
+  margin-top: 20px
 }
